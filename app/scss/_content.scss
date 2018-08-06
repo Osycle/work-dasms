@@ -1,0 +1,127 @@
+/*
+	_content.css
+*/
+
+
+
+
+//--bnr-slider
+.bnr-slider{
+	position: relative;
+	overflow: hidden;
+	.flickity-slider{
+		transform: inherit !important;
+	}
+	.bnr-carousel{
+		background-color: white;
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		background-position: center center;
+	}
+	figure{
+		height: 800px;
+		transition: all 2s ease;
+		left: 0 !important;
+		.img{
+			position: absolute;
+			height: 100%;
+	    background-size: cover;
+	    background-position: center;
+	   	filter: blur(0px) brightness(120%);
+			transition: 
+									transform 1.2s ease,
+									opacity 1s ease-in-out,
+									filter 1s linear 0.5s;
+		}
+		opacity: 0;
+		&.is-selected{
+			z-index: 1;
+			opacity: 1;
+			.img{
+				filter: blur(0);
+			}
+		}
+	}
+
+	.bg-color-3{
+		background-color: rgba($color-3, 0.5);
+		border-radius: 15px;
+		padding: 15px 20px;
+	}
+	//Стрелки
+	.carousel-prev-next{
+		width: ingerit;
+		//((100/12)*8)+%
+		left: 50%;
+		transform: translateX(-50%);
+		.bg-wrapper{
+			bottom: 0;
+			position: absolute;
+			background-color: $color-2;
+			height: 40px; 
+		}
+		.next, .prev{
+			color: white;
+			width: 50%;
+			height: 100%;
+			text-align: center;
+			transform: translateY(-50%);
+			transition: all 0.3s ease;
+			.fa{
+				padding-top: 10px;
+			}
+			&:hover{
+				background-color: $color-3;
+				color: white;
+			}
+		}
+		.prev{
+			left: 0;
+		}
+		.next{
+			right: 0;
+		}
+	}
+
+	@media(max-width: 991px) {
+		font-size: 0.9em;
+		figure{
+			height: 200px;
+			.carousel-content{
+				display: none;
+			}
+		}
+		.bg-wrapper{
+			width: 100%;
+			transform: scale(0.8);
+		}
+		.carousel-prev-next{
+			width: 100%;
+		}
+	}
+	@media(max-width:370px) {
+		word-wrap: break-word;
+	}
+}
+.slider-feedback{
+	top: 200px;
+}
+
+.angle-bottom-notify{
+	&:before{
+		@extend .claf;
+		background-image: url('../img/other/angle-bottom.png');
+		background-position: center;
+		background-size: cover;
+		width: 30px;
+		bottom: 0px;
+		top: auto;
+		height: 18px;
+		left: 50%;
+		transform: translateX(-50%) translateY(100%);
+	}
+}
+
+
+
