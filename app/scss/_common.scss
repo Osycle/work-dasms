@@ -552,6 +552,7 @@ table {
 .btn-style{
 	display: block;
 	white-space: nowrap;
+	border-radius: 20px;
 	text-align: center;
 	//text-transform: uppercase;
 	font-weight: 600;
@@ -597,7 +598,7 @@ table {
 	&:not([class*="color-"]){
 		color: white;
 	}
-	&:not([class*="bg-color"]){
+	&:not([class*="bg-color"], :hover){
 		background-color: $color-1;
 	}
 	&.radius{
@@ -721,7 +722,7 @@ table {
 
 .parag-gray{
 	p{
-		color: gray;
+		color: #757575;
 	}
 }
 
@@ -731,7 +732,6 @@ body{
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	text-size-adjust: none;
-	background-image: url('../img/bg/bg-body.jpg');
 
 	font: 14px $font-family-1;
 	overflow-x: hidden;
@@ -838,9 +838,10 @@ h1, h2, h3, h4{
 h1{
 	font-size: em(33, 15);
 	margin-bottom: 15px;
+	font-weight: 700;
 }
 h2{
-	font-weight: 700;
+	font-weight: 400;
 	font-size: em(24, 15);
 	margin-bottom: 15px;
 } 
@@ -853,43 +854,9 @@ h4{
 	font-size: em(18, 15);
 }
 h5{	
-	line-height: 170%;
 	font-size: em(15, 15);
-	font-weight: 700;
-	text-transform: uppercase;
 }
-h1,h2,h3,h4,h5 {
-	&[align='center']{
-		&:before{
-			left: 50%;
-			transform: translateX(-50%);
-		}
-	}
-}
-.h1-before-none{
-	h1{
-		padding-bottom: 0;
-		&:before{
-			display: none;
-		}
-	}
-}
-.h2-before-none{
-	h2{
-		padding-bottom: 0;
-		&:before{
-			display: none;
-		}
-	}
-}
-.h3-before-none{
-	h3{
-		padding-bottom: 0;
-		&:before{
-			display: none;
-		}
-	}
-}
+
 .h-style-1{
 	&:after, &:before{
 		@extend .claf;
@@ -945,12 +912,10 @@ hr{
 	@media (max-width: 991px){
 		text-align: center ;
 	}
-	h1,h2,h3, h4{
-		color: $color-2;
-	}
 	p{
-		line-height: 180%;
-		font-size: 0.95em;
+		font-size: 0.90em;
+		font-weight: 300;
+		line-height: 125%;
 	}
 	ul:not([class]){
 		text-align: left;

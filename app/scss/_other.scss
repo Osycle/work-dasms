@@ -237,13 +237,14 @@ html body{
 	margin-bottom: 60px;
 	.dot{
 		transition: all 0.3s ease;
-		background-color: white;
+		background-color: rgba(black, 0.5);
 		opacity: 1;
-		border-radius: 0;
-  	width: 60px;
-  	height: 16px;
+		border-radius: 50%;
+  	width: 12px;
+  	height: 12px;
 		&.is-selected{
-			background-color: rgba($color-1, 1);
+			transform: scale(1.4);
+			background-color: rgba(white, 1);
 		}
 	}
 }

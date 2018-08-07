@@ -185,7 +185,7 @@
 				prevNextButtons: false,
 				draggable: false,
 				wrapAround: true,
-				pageDots: false,
+				pageDots: true,
 				contain: false,
 				percentPosition: true,
 				cellSelector: 'figure',
