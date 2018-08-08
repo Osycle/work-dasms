@@ -558,6 +558,9 @@ table {
 	font-weight: 600;
 	//background-color: $color-1;
 	font-family: $font-family-1;
+	&.text-wrap{
+		white-space: wrap;
+	}
 	button{
 		width: 100%;
 	}
@@ -836,6 +839,7 @@ h1, h2, h3, h4{
 	position: relative;	
 }
 h1{
+	line-height: 125%;
 	font-size: em(33, 15);
 	margin-bottom: 15px;
 	font-weight: 700;
@@ -908,13 +912,14 @@ hr{
 
 .main-content{
 	//z-index: 1;
+	background-color: white;
 	position: relative;
 	@media (max-width: 991px){
 		text-align: center ;
 	}
 	p{
-		font-size: 0.90em;
-		font-weight: 300;
+		font-size: 0.9em;
+		font-weight: 400;
 		line-height: 125%;
 	}
 	ul:not([class]){
@@ -1082,14 +1087,26 @@ hr{
 }
 
 input.pie-form-control{
-	height: 35px;
-	font-size: 0.8em;
-	padding: 7px 12px;
+	height: 40px;
+	padding: 5px 12px;
 }
 textarea.pie-form-control{
 	resize: none;
 	padding: 7px 12px;
-	font-size: 0.8em;
+}
+select.pie-form-control{
+	height: 40px;
+	padding: 5px 12px;
+	background-color: transparent;
+	&:focus{
+		outline: none;
+	}
+	option{
+		color: black;
+		padding: 30px;
+		font-weight: 600;
+		background-color: transparent;
+	}
 }
 //modal-control
 input.modal-control, textarea.modal-control{

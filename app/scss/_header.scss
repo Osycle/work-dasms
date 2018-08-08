@@ -69,6 +69,7 @@ header{
 	display: none;
 	@media ( max-width: 991px ){
 		height: 70px;
+		display: block;
 	}
 }
 
@@ -77,23 +78,24 @@ header{
 	position: fixed;
 	width: 100%;
 }
-.header-middle{
-	
-}
-.header-bottom{
-
-}
 .header-top, .header-bottom{
-	transition: all 0.5s ease 0.0s;
 	transform: inherit;transform: unset;
 }
 
 .header-scroll{
-	.header-middle{
-		transition: all 0.5s ease; 	
-		transform-origin:50% 0;
+	.header-top{
+		.menu{
+			transition: all 0.5s ease; 	
+			transform-origin:50% 0;
+		}
 	}
 	&.scrolled, &.header-pages{
+		.header-top{
+			box-shadow: 0px 5px 20px -10px black;
+			.menu{
+				height: 60px;
+			}
+		}
 		.header-middle{
 			transform: rotateX(-90deg) perspective(1500px) ;	
 		}

@@ -75,8 +75,8 @@
 		$("#min-menu").mmenu({
 			extensions: [
 				"pagedim-black", // wrapper-bg black
-				//"theme-dark",
-				"theme-white",
+				"theme-dark",
+				//"theme-white",
 				//"fullscreen",
 				//"listview-50",
 				//"fx-panels-slide-up",
