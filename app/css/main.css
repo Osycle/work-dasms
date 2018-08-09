@@ -7690,16 +7690,11 @@ ul[class*="sub"] {
   background-size: 600px;
   background-position: right; }
 
-.img-traf-3 {
-  background-image: url(../img/other/traf-3.png);
-  height: 60px;
-  background-position: 10% 100%;
-  -webkit-background-size: 380% 380%;
-  background-size: 380%;
-  background-repeat: no-repeat;
-  z-index: 1;
-  margin-top: -40px;
-  pointer-events: none; }
+.min-menu-lang li {
+  text-decoration: underline; }
+
+.min-menu-lang .active {
+  color: #643dfa; }
 
 .min-menu-header {
   -webkit-transition: top 0.3s ease-in-out 0.3s;
@@ -8300,17 +8295,19 @@ textarea.form-control {
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease; }
-  .short-tariffs-items .bg-wrapper:hover {
+  .short-tariffs-items .bg-wrapper:hover, .short-tariffs-items .bg-wrapper.active {
     -webkit-box-shadow: 0 0 30px -2px black;
     box-shadow: 0 0 30px -2px black;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
     border-color: #fa4402; }
-    .short-tariffs-items .bg-wrapper:hover .cap-content {
+    .short-tariffs-items .bg-wrapper:hover .cap-content, .short-tariffs-items .bg-wrapper.active .cap-content {
       background-color: #fa4402; }
-    .short-tariffs-items .bg-wrapper:hover .btn-def {
+    .short-tariffs-items .bg-wrapper:hover .btn-def, .short-tariffs-items .bg-wrapper.active .btn-def {
       background-color: #643dfa; }
+  .short-tariffs-items .bg-wrapper:hover {
+    z-index: 2; }
 
 .short-tariffs-items .desc-content {
   margin-top: 30px;
@@ -8361,20 +8358,22 @@ textarea.form-control {
     -webkit-transition: 0.3s ease;
     -o-transition: 0.3s ease;
     transition: 0.3s ease; }
-  .short-tariffextend-items .bg-wrapper:hover {
+  .short-tariffextend-items .bg-wrapper:hover, .short-tariffextend-items .bg-wrapper.active {
     z-index: 1;
     -webkit-border-radius: 15px !important;
     border-radius: 15px !important;
     -webkit-box-shadow: 0 0 30px -2px black;
     box-shadow: 0 0 30px -2px black;
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
     border: 1px solid #fa4402; }
-    .short-tariffextend-items .bg-wrapper:hover .cap-content {
+    .short-tariffextend-items .bg-wrapper:hover .cap-content, .short-tariffextend-items .bg-wrapper.active .cap-content {
       background-color: #fa4402; }
-    .short-tariffextend-items .bg-wrapper:hover .btn-def {
+    .short-tariffextend-items .bg-wrapper:hover .btn-def, .short-tariffextend-items .bg-wrapper.active .btn-def {
       background-color: #643dfa; }
+  .short-tariffextend-items .bg-wrapper:hover {
+    z-index: 2; }
 
 .short-tariffextend-items .desc-content {
   margin-top: 30px;

@@ -328,9 +328,9 @@
 			height: 45px;
 			transition: 0.3s ease;
 		}
-		&:hover{
+		&:hover, &.active{
 			box-shadow: 0 0 30px -2px black;
-			transform: scale(1.1);
+			transform: scale(1.05);
 			border-color: $color-1;
 			.cap-content{
 				background-color: $color-1;
@@ -340,6 +340,9 @@
 			}
 			
 		}
+		&:hover{
+			z-index: 2;
+		}		
 	}
 	.desc-content{
 		margin-top: 30px;
@@ -393,11 +396,11 @@
 			height: 50px;
 			transition: 0.3s ease;
 		}
-		&:hover{
+		&:hover, &.active{
 			z-index: 1;
 			border-radius: 15px !important;
 			box-shadow: 0 0 30px -2px black;
-			transform: scale(1.1);
+			transform: scale(1.05);
 			border: 1px solid $color-1;
 			.cap-content{
 				background-color: $color-1;
@@ -406,6 +409,9 @@
 				background-color: $color-2;
 			}
 			
+		}
+		&:hover{
+			z-index: 2;
 		}
 	}
 	.desc-content{

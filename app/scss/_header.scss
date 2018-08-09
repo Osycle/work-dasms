@@ -288,17 +288,13 @@ ul[class*="sub"]{
 	background-size: 600px;
 	background-position: right;
 }
-.img-traf-3{
-  background-image: url(../img/other/traf-3.png);
-  height: 60px;
-  background-position: 10% 100%;
-  background-size: 380%;
-  background-repeat: no-repeat;
-  z-index: 1;
-  margin-top: -40px;
-  pointer-events: none;
-}
-.min-menu-footer{
+.min-menu-lang{
+	li{
+		text-decoration: underline;
+	}
+	.active{
+		color: $color-2;
+	}
 }
 
 
