@@ -72,7 +72,9 @@ header{
 		display: block;
 	}
 }
-
+.header-offset{
+	height: 100px;
+}
 .header-top{
 	background-color: $color-3;	
 	position: fixed;

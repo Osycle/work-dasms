@@ -9,6 +9,7 @@ $color-2: #643dfa !default;
 $color-3: #291f4c !default;
 $color-4: #384f92 !default;
 $color-5: #d58e32 !default;
+$color-special-1: #3EA82C;
 
 $font-family-1: "Open Sans";
 $font-family-2: "sans-serif";
@@ -292,7 +293,7 @@ table {
 .color-3{color: $color-3;}
 .color-4{color: $color-4;}
 .color-5{color: $color-5;}
-
+.color-special-1{color: $color-special-1;}
 
 [class*="hover-color"] a, 
 [class*="hover-underline"] a, 
@@ -351,7 +352,7 @@ table {
 .bg-color-3{background-color: $color-3;}
 .bg-color-4{background-color: $color-4;}
 .bg-color-5{background-color: $color-5;}
-
+.bg-color-special-1{background-color: $color-special-1;}
 .info-success{
 	color: #3da835;
 }

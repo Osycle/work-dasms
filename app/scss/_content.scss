@@ -350,42 +350,70 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	@media (max-width: 991px){
+		padding: 0 15px;
+	}
 }
 
 .short-tariffextend-items{
 	.boxes-cell{
+		
 		margin-top: 15px;
 		margin-bottom: 15px;
 		
 		@media (min-width:992px) {
-			
 			width: (100/5)+%;	
 			&:nth-child(1){
 				.bg-wrapper{
-					border-top-right-radius: 0;
-					border-bottom-right-radius: 0;
 					border-right: 0;
+					.cap-content{
+						border-top-right-radius: 0;
+						border-bottom-right-radius: 0;
+					}
 				}
 				& ~ div:not(:nth-last-child(1)) .bg-wrapper{
-					border-radius: 0;
+					&{
+						border-radius: 0;
+					}
+					.cap-content{
+						border-radius: 0;
+					}
 					border-left: 0;
 					border-right: 0;
 				}
 			}
 			&:nth-last-child(1){
 				.bg-wrapper{
-					border-top-left-radius: 0;
-					border-bottom-left-radius: 0;
+					&, .cap-content{
+						border-top-left-radius: 0;
+						border-bottom-left-radius: 0;
+					}
 					border-left: 0;
+				}
+			}
+		}
+		.tooltip{	
+			.tooltip-inner{
+				background-color: $color-3;
+				padding: 15px;
+			}
+		}
+		a {
+			display: block;
+			.tooltip{
+				transition: all 0.3s ease;
+			}
+			.btn-def:hover{
+				transform: scale(1.5);	
+				& ~ tooltip{
+					transform: scale(1.5);	
 				}
 			}
 		}
 	}
 	.bg-wrapper{
 		transition: all 0.3s ease;
-		overflow: hidden;
 		height: 200px;
-		overflow: hidden;
 		border-radius: 15px;
 		border: 1px solid black;
 		border-top: transparent;
@@ -393,16 +421,18 @@
 		position: relative;
 		background-color: white;
 		.cap-content{
+			border-radius: 15px 15px 0 0;
 			height: 50px;
 			transition: 0.3s ease;
 		}
 		&:hover, &.active{
 			z-index: 1;
-			border-radius: 15px !important;
 			box-shadow: 0 0 30px -2px black;
 			transform: scale(1.05);
 			border: 1px solid $color-1;
+			border-radius: 15px !important;
 			.cap-content{
+				border-radius: 15px 15px 0 0 !important;
 				background-color: $color-1;
 			}
 			.btn-def{
@@ -410,6 +440,7 @@
 			}
 			
 		}
+
 		&:hover{
 			z-index: 2;
 		}
@@ -422,6 +453,7 @@
 	}
 	@media (max-width:991px) {
 		flex-direction: column;
+		padding: 0 15px;
 	}
 }
 
@@ -439,8 +471,8 @@
 		background-position: 50% 50%;
 	}
 	.map-notify{
-    left: 28.5%;
-    top: 65%;
+    left: 28.4%;
+    top: 67%;
 		box-shadow:  0 0 45px -6px black;
 		padding:  3px 10px 10px;
 		position: absolute;
@@ -503,4 +535,60 @@
 	background-color: rgba($color-2, 1);
 	color: white;
 	font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//contacts
+.contacts-form{
+	input, textarea{
+		@include placeholder-color(#111);
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.input-content{
+		position: relative;
+	}
+	.icon-content{
+		position: absolute;
+		right: 25px;
+		top: 10px;
+		font-size: 16px;
+		color: rgba(black, 0.3);
+	}
+	.fa-user, .fa-phone{
+		font-size: 20px;
+	}
+}
+.contacts-info-items{
+	.icon-content{
+		width: 25px;
+		height: 25px;
+		background-color: $color-2;
+		border-radius: 50%;
+		font-size: 16px;
+		text-align: center;
+		color: white;
+		.fa{
+			padding: 6px 0;
+		}
+		.fa-envelope{
+			font-size: 13px;
+			padding: 0px;
+		}
+		.fa-headphones{
+			padding: 6px 0;
+		}
+	}
 }
