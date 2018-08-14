@@ -19,6 +19,15 @@
 		background-size: cover;
 		background-position: center center;
 	}
+	.carousel-content{
+		height: 100%;
+		position: relative;
+	}
+	.desc-content{
+		position: absolute;
+		bottom: 60px;
+		transform: translateX(-15px);
+	}
 	figure{
 		height: 1000px;
 		transition: all 2s ease;
@@ -111,7 +120,14 @@
 	}
 }
 .slider-feedback{
-	margin-top: 200px;
+	position: absolute;
+	top: 200px;
+	z-index: 1;
+	@extend .trans-h-center;
+	pointer-events: none;
+	*{
+		pointer-events: auto;
+	}
 }
 .slider-slogan.bg-color-3{
 	margin-top: 400px;
