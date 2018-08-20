@@ -2783,7 +2783,8 @@ template {
   .table, table {
     border-collapse: collapse !important; }
     .table td, table td,
-    .table th, table th {
+    .table th,
+    table th {
       background-color: #fff !important; }
   .table-bordered th,
   .table-bordered td {
@@ -2800,7 +2801,7 @@ template {
 
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 body {
   line-height: 1.42857; }
@@ -2872,7 +2873,8 @@ hr {
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   position: static;
   width: auto;
   height: auto;
@@ -3789,11 +3791,16 @@ th {
   max-width: 100%;
   margin-bottom: 20px; }
   .table > thead > tr > th, table > thead > tr > th,
-  .table > thead > tr > td, table > thead > tr > td,
-  .table > tbody > tr > th, table > tbody > tr > th,
-  .table > tbody > tr > td, table > tbody > tr > td,
-  .table > tfoot > tr > th, table > tfoot > tr > th,
-  .table > tfoot > tr > td, table > tfoot > tr > td {
+  .table > thead > tr > td,
+  table > thead > tr > td,
+  .table > tbody > tr > th,
+  table > tbody > tr > th,
+  .table > tbody > tr > td,
+  table > tbody > tr > td,
+  .table > tfoot > tr > th,
+  table > tfoot > tr > th,
+  .table > tfoot > tr > td,
+  table > tfoot > tr > td {
     padding: 8px;
     line-height: 1.42857;
     vertical-align: top;
@@ -3802,11 +3809,16 @@ th {
     vertical-align: bottom;
     border-bottom: 2px solid #ddd; }
   .table > caption + thead > tr:first-child > th, table > caption + thead > tr:first-child > th,
-  .table > caption + thead > tr:first-child > td, table > caption + thead > tr:first-child > td,
-  .table > colgroup + thead > tr:first-child > th, table > colgroup + thead > tr:first-child > th,
-  .table > colgroup + thead > tr:first-child > td, table > colgroup + thead > tr:first-child > td,
-  .table > thead:first-child > tr:first-child > th, table > thead:first-child > tr:first-child > th,
-  .table > thead:first-child > tr:first-child > td, table > thead:first-child > tr:first-child > td {
+  .table > caption + thead > tr:first-child > td,
+  table > caption + thead > tr:first-child > td,
+  .table > colgroup + thead > tr:first-child > th,
+  table > colgroup + thead > tr:first-child > th,
+  .table > colgroup + thead > tr:first-child > td,
+  table > colgroup + thead > tr:first-child > td,
+  .table > thead:first-child > tr:first-child > th,
+  table > thead:first-child > tr:first-child > th,
+  .table > thead:first-child > tr:first-child > td,
+  table > thead:first-child > tr:first-child > td {
     border-top: 0; }
   .table > tbody + tbody, table > tbody + tbody {
     border-top: 2px solid #ddd; }
@@ -3852,17 +3864,28 @@ table th[class*="col-"] {
   display: table-cell; }
 
 .table > thead > tr > td.active, table > thead > tr > td.active,
-.table > thead > tr > th.active, table > thead > tr > th.active,
-.table > thead > tr.active > td, table > thead > tr.active > td,
-.table > thead > tr.active > th, table > thead > tr.active > th,
-.table > tbody > tr > td.active, table > tbody > tr > td.active,
-.table > tbody > tr > th.active, table > tbody > tr > th.active,
-.table > tbody > tr.active > td, table > tbody > tr.active > td,
-.table > tbody > tr.active > th, table > tbody > tr.active > th,
-.table > tfoot > tr > td.active, table > tfoot > tr > td.active,
-.table > tfoot > tr > th.active, table > tfoot > tr > th.active,
-.table > tfoot > tr.active > td, table > tfoot > tr.active > td,
-.table > tfoot > tr.active > th, table > tfoot > tr.active > th {
+.table > thead > tr > th.active,
+table > thead > tr > th.active,
+.table > thead > tr.active > td,
+table > thead > tr.active > td,
+.table > thead > tr.active > th,
+table > thead > tr.active > th,
+.table > tbody > tr > td.active,
+table > tbody > tr > td.active,
+.table > tbody > tr > th.active,
+table > tbody > tr > th.active,
+.table > tbody > tr.active > td,
+table > tbody > tr.active > td,
+.table > tbody > tr.active > th,
+table > tbody > tr.active > th,
+.table > tfoot > tr > td.active,
+table > tfoot > tr > td.active,
+.table > tfoot > tr > th.active,
+table > tfoot > tr > th.active,
+.table > tfoot > tr.active > td,
+table > tfoot > tr.active > td,
+.table > tfoot > tr.active > th,
+table > tfoot > tr.active > th {
   background-color: #f5f5f5; }
 
 .table-hover > tbody > tr > td.active:hover,
@@ -3873,17 +3896,28 @@ table th[class*="col-"] {
   background-color: #e8e8e8; }
 
 .table > thead > tr > td.success, table > thead > tr > td.success,
-.table > thead > tr > th.success, table > thead > tr > th.success,
-.table > thead > tr.success > td, table > thead > tr.success > td,
-.table > thead > tr.success > th, table > thead > tr.success > th,
-.table > tbody > tr > td.success, table > tbody > tr > td.success,
-.table > tbody > tr > th.success, table > tbody > tr > th.success,
-.table > tbody > tr.success > td, table > tbody > tr.success > td,
-.table > tbody > tr.success > th, table > tbody > tr.success > th,
-.table > tfoot > tr > td.success, table > tfoot > tr > td.success,
-.table > tfoot > tr > th.success, table > tfoot > tr > th.success,
-.table > tfoot > tr.success > td, table > tfoot > tr.success > td,
-.table > tfoot > tr.success > th, table > tfoot > tr.success > th {
+.table > thead > tr > th.success,
+table > thead > tr > th.success,
+.table > thead > tr.success > td,
+table > thead > tr.success > td,
+.table > thead > tr.success > th,
+table > thead > tr.success > th,
+.table > tbody > tr > td.success,
+table > tbody > tr > td.success,
+.table > tbody > tr > th.success,
+table > tbody > tr > th.success,
+.table > tbody > tr.success > td,
+table > tbody > tr.success > td,
+.table > tbody > tr.success > th,
+table > tbody > tr.success > th,
+.table > tfoot > tr > td.success,
+table > tfoot > tr > td.success,
+.table > tfoot > tr > th.success,
+table > tfoot > tr > th.success,
+.table > tfoot > tr.success > td,
+table > tfoot > tr.success > td,
+.table > tfoot > tr.success > th,
+table > tfoot > tr.success > th {
   background-color: #dff0d8; }
 
 .table-hover > tbody > tr > td.success:hover,
@@ -3894,17 +3928,28 @@ table th[class*="col-"] {
   background-color: #d0e9c6; }
 
 .table > thead > tr > td.info, table > thead > tr > td.info,
-.table > thead > tr > th.info, table > thead > tr > th.info,
-.table > thead > tr.info > td, table > thead > tr.info > td,
-.table > thead > tr.info > th, table > thead > tr.info > th,
-.table > tbody > tr > td.info, table > tbody > tr > td.info,
-.table > tbody > tr > th.info, table > tbody > tr > th.info,
-.table > tbody > tr.info > td, table > tbody > tr.info > td,
-.table > tbody > tr.info > th, table > tbody > tr.info > th,
-.table > tfoot > tr > td.info, table > tfoot > tr > td.info,
-.table > tfoot > tr > th.info, table > tfoot > tr > th.info,
-.table > tfoot > tr.info > td, table > tfoot > tr.info > td,
-.table > tfoot > tr.info > th, table > tfoot > tr.info > th {
+.table > thead > tr > th.info,
+table > thead > tr > th.info,
+.table > thead > tr.info > td,
+table > thead > tr.info > td,
+.table > thead > tr.info > th,
+table > thead > tr.info > th,
+.table > tbody > tr > td.info,
+table > tbody > tr > td.info,
+.table > tbody > tr > th.info,
+table > tbody > tr > th.info,
+.table > tbody > tr.info > td,
+table > tbody > tr.info > td,
+.table > tbody > tr.info > th,
+table > tbody > tr.info > th,
+.table > tfoot > tr > td.info,
+table > tfoot > tr > td.info,
+.table > tfoot > tr > th.info,
+table > tfoot > tr > th.info,
+.table > tfoot > tr.info > td,
+table > tfoot > tr.info > td,
+.table > tfoot > tr.info > th,
+table > tfoot > tr.info > th {
   background-color: #d9edf7; }
 
 .table-hover > tbody > tr > td.info:hover,
@@ -3915,17 +3960,28 @@ table th[class*="col-"] {
   background-color: #c4e3f3; }
 
 .table > thead > tr > td.warning, table > thead > tr > td.warning,
-.table > thead > tr > th.warning, table > thead > tr > th.warning,
-.table > thead > tr.warning > td, table > thead > tr.warning > td,
-.table > thead > tr.warning > th, table > thead > tr.warning > th,
-.table > tbody > tr > td.warning, table > tbody > tr > td.warning,
-.table > tbody > tr > th.warning, table > tbody > tr > th.warning,
-.table > tbody > tr.warning > td, table > tbody > tr.warning > td,
-.table > tbody > tr.warning > th, table > tbody > tr.warning > th,
-.table > tfoot > tr > td.warning, table > tfoot > tr > td.warning,
-.table > tfoot > tr > th.warning, table > tfoot > tr > th.warning,
-.table > tfoot > tr.warning > td, table > tfoot > tr.warning > td,
-.table > tfoot > tr.warning > th, table > tfoot > tr.warning > th {
+.table > thead > tr > th.warning,
+table > thead > tr > th.warning,
+.table > thead > tr.warning > td,
+table > thead > tr.warning > td,
+.table > thead > tr.warning > th,
+table > thead > tr.warning > th,
+.table > tbody > tr > td.warning,
+table > tbody > tr > td.warning,
+.table > tbody > tr > th.warning,
+table > tbody > tr > th.warning,
+.table > tbody > tr.warning > td,
+table > tbody > tr.warning > td,
+.table > tbody > tr.warning > th,
+table > tbody > tr.warning > th,
+.table > tfoot > tr > td.warning,
+table > tfoot > tr > td.warning,
+.table > tfoot > tr > th.warning,
+table > tfoot > tr > th.warning,
+.table > tfoot > tr.warning > td,
+table > tfoot > tr.warning > td,
+.table > tfoot > tr.warning > th,
+table > tfoot > tr.warning > th {
   background-color: #fcf8e3; }
 
 .table-hover > tbody > tr > td.warning:hover,
@@ -3936,17 +3992,28 @@ table th[class*="col-"] {
   background-color: #faf2cc; }
 
 .table > thead > tr > td.danger, table > thead > tr > td.danger,
-.table > thead > tr > th.danger, table > thead > tr > th.danger,
-.table > thead > tr.danger > td, table > thead > tr.danger > td,
-.table > thead > tr.danger > th, table > thead > tr.danger > th,
-.table > tbody > tr > td.danger, table > tbody > tr > td.danger,
-.table > tbody > tr > th.danger, table > tbody > tr > th.danger,
-.table > tbody > tr.danger > td, table > tbody > tr.danger > td,
-.table > tbody > tr.danger > th, table > tbody > tr.danger > th,
-.table > tfoot > tr > td.danger, table > tfoot > tr > td.danger,
-.table > tfoot > tr > th.danger, table > tfoot > tr > th.danger,
-.table > tfoot > tr.danger > td, table > tfoot > tr.danger > td,
-.table > tfoot > tr.danger > th, table > tfoot > tr.danger > th {
+.table > thead > tr > th.danger,
+table > thead > tr > th.danger,
+.table > thead > tr.danger > td,
+table > thead > tr.danger > td,
+.table > thead > tr.danger > th,
+table > thead > tr.danger > th,
+.table > tbody > tr > td.danger,
+table > tbody > tr > td.danger,
+.table > tbody > tr > th.danger,
+table > tbody > tr > th.danger,
+.table > tbody > tr.danger > td,
+table > tbody > tr.danger > td,
+.table > tbody > tr.danger > th,
+table > tbody > tr.danger > th,
+.table > tfoot > tr > td.danger,
+table > tfoot > tr > td.danger,
+.table > tfoot > tr > th.danger,
+table > tfoot > tr > th.danger,
+.table > tfoot > tr.danger > td,
+table > tfoot > tr.danger > td,
+.table > tfoot > tr.danger > th,
+table > tfoot > tr.danger > th {
   background-color: #f2dede; }
 
 .table-hover > tbody > tr > td.danger:hover,
@@ -4954,8 +5021,10 @@ tbody.collapse.in {
     -webkit-border-radius: 4px;
     border-radius: 4px; }
   .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
-  .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+  .nav-tabs-justified > .active > a:hover,
+  .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus,
+  .nav-tabs.nav-justified > .active > a:focus {
     border: 1px solid #ddd; }
   @media (min-width: 768px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
@@ -4963,8 +5032,10 @@ tbody.collapse.in {
       -webkit-border-radius: 4px 4px 0 0;
       border-radius: 4px 4px 0 0; }
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
-    .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
-    .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+    .nav-tabs-justified > .active > a:hover,
+    .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus,
+    .nav-tabs.nav-justified > .active > a:focus {
       border-bottom-color: #fff; } }
 
 .tab-content > .tab-pane {
@@ -6420,7 +6491,7 @@ tbody.collapse.in {
   background-color: rgba(255, 255, 255, 0.5); }
 
 html {
-  -ms-scrollbar-track-color: transparent;
+  -ms-scrollbar-track-color: rgba(0, 0, 0, 0);
   -ms-scrollbar-face-color: #fa4402;
   -ms-scrollbar-shadow-color: #fa4402;
   -ms-scrollbar-base-color: #fd5518;
@@ -6944,7 +7015,7 @@ table {
 .btn-def:not([class*="color-"]), .btn-icon:not([class*="color-"]) {
   color: white; }
 
-.btn-def:not([class*="bg-color"]):not(:hover), .btn-icon:not([class*="bg-color"]):not(:hover) {
+.btn-def , .btn-icon {
   background-color: #fa4402; }
 
 .btn-def.radius, .btn-icon.radius {
@@ -8229,9 +8300,9 @@ textarea.form-control {
   -webkit-border-radius: 15px;
   border-radius: 15px; }
 
-.short-tariffs-items .boxes-cell {
-  margin-top: 15px;
-  margin-bottom: 15px; }
+.short-tariffs .entry-header {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .short-tariffs-items .bg-wrapper {
   -webkit-transition: all 0.3s ease;
@@ -8269,54 +8340,60 @@ textarea.form-control {
 
 @media (max-width: 991px) {
   .short-tariffs-items {
-    padding: 0 15px; } }
+    padding: 0 15px; }
+    .short-tariffs-items .boxes-cell {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
 
-.short-tariffextend-items .boxes-cell {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-  @media (min-width: 992px) {
-    .short-tariffextend-items .boxes-cell {
-      width: 20%; }
-      .short-tariffextend-items .boxes-cell:nth-child(1) .bg-wrapper {
-        border-right: 0; }
-        .short-tariffextend-items .boxes-cell:nth-child(1) .bg-wrapper .cap-content {
-          -webkit-border-top-right-radius: 0;
-          border-top-right-radius: 0;
-          -webkit-border-bottom-right-radius: 0;
-          border-bottom-right-radius: 0; }
-      .short-tariffextend-items .boxes-cell:nth-child(1) ~ div:not(:nth-last-child(1)) .bg-wrapper {
-        border-left: 0;
-        border-right: 0; }
-        .short-tariffextend-items .boxes-cell:nth-child(1) ~ div:not(:nth-last-child(1)) .bg-wrapper {
-          -webkit-border-radius: 0;
-          border-radius: 0; }
-        .short-tariffextend-items .boxes-cell:nth-child(1) ~ div:not(:nth-last-child(1)) .bg-wrapper .cap-content {
-          -webkit-border-radius: 0;
-          border-radius: 0; }
-      .short-tariffextend-items .boxes-cell:nth-last-child(1) .bg-wrapper {
-        border-left: 0; }
-        .short-tariffextend-items .boxes-cell:nth-last-child(1) .bg-wrapper, .short-tariffextend-items .boxes-cell:nth-last-child(1) .bg-wrapper .cap-content {
-          -webkit-border-top-left-radius: 0;
-          border-top-left-radius: 0;
-          -webkit-border-bottom-left-radius: 0;
-          border-bottom-left-radius: 0; } }
-  .short-tariffextend-items .boxes-cell .tooltip .tooltip-inner {
-    background-color: #291f4c;
-    padding: 15px; }
-  .short-tariffextend-items .boxes-cell a {
-    display: block; }
-    .short-tariffextend-items .boxes-cell a .tooltip {
-      -webkit-transition: all 0.3s ease;
-      -o-transition: all 0.3s ease;
-      transition: all 0.3s ease; }
-    .short-tariffextend-items .boxes-cell a .btn-def:hover {
+.short-tariffextend-items .boxes-cell .tooltip .tooltip-inner {
+  background-color: #291f4c;
+  padding: 15px; }
+
+.short-tariffextend-items .boxes-cell a {
+  display: block; }
+  .short-tariffextend-items .boxes-cell a .tooltip {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .short-tariffextend-items .boxes-cell a .btn-def:hover {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5); }
+    .short-tariffextend-items .boxes-cell a .btn-def:hover ~ tooltip {
       -webkit-transform: scale(1.5);
       -ms-transform: scale(1.5);
       transform: scale(1.5); }
-      .short-tariffextend-items .boxes-cell a .btn-def:hover ~ tooltip {
-        -webkit-transform: scale(1.5);
-        -ms-transform: scale(1.5);
-        transform: scale(1.5); }
+
+@media (min-width: 992px) {
+  .short-tariffextend-items .boxes-cell {
+    width: 20%; }
+    .short-tariffextend-items .boxes-cell:nth-child(1) .bg-wrapper {
+      border-right: 0; }
+      .short-tariffextend-items .boxes-cell:nth-child(1) .bg-wrapper .cap-content {
+        -webkit-border-top-right-radius: 0;
+        border-top-right-radius: 0;
+        -webkit-border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0; }
+    .short-tariffextend-items .boxes-cell:nth-child(1) ~ div:not(:nth-last-child(1)) .bg-wrapper {
+      border-left: 0;
+      border-right: 0; }
+      .short-tariffextend-items .boxes-cell:nth-child(1) ~ div:not(:nth-last-child(1)) .bg-wrapper {
+        -webkit-border-radius: 0;
+        border-radius: 0; }
+      .short-tariffextend-items .boxes-cell:nth-child(1) ~ div:not(:nth-last-child(1)) .bg-wrapper .cap-content {
+        -webkit-border-radius: 0;
+        border-radius: 0; }
+    .short-tariffextend-items .boxes-cell:nth-last-child(1) .bg-wrapper {
+      border-left: 0; }
+      .short-tariffextend-items .boxes-cell:nth-last-child(1) .bg-wrapper, .short-tariffextend-items .boxes-cell:nth-last-child(1) .bg-wrapper .cap-content {
+        -webkit-border-top-left-radius: 0;
+        border-top-left-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0; } }
+
+@media (max-width: 991px) {
+  .short-tariffextend-items .boxes-cell {
+    margin: 0 0; } }
 
 .short-tariffextend-items .bg-wrapper {
   -webkit-transition: all 0.3s ease;
@@ -8370,6 +8447,11 @@ textarea.form-control {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0 15px; } }
+
+@media (min-width: 992px) {
+  .short-tariffsgive-items.figure-m-v-30 figure {
+    margin-top: 10px;
+    margin-bottom: 0; } }
 
 .map-img .img {
   position: relative;

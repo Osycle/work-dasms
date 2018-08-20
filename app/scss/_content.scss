@@ -329,11 +329,13 @@
 
 
 //--short-tariffs-items
-.short-tariffs-items{
-	.boxes-cell{
-		margin-top: 15px;
-		margin-bottom: 15px;
+.short-tariffs{
+	.entry-header{
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
+}
+.short-tariffs-items{
 	.bg-wrapper{
 		transition: all 0.3s ease;
 		overflow: hidden;
@@ -366,18 +368,41 @@
 		padding-left: 15px;
 		padding-right: 15px;
 	}
+	@media (max-width: 1199px){
+
+	}
 	@media (max-width: 991px){
 		padding: 0 15px;
+		.boxes-cell{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
 	}
 }
 
 .short-tariffextend-items{
 	.boxes-cell{
-		
-		margin-top: 15px;
-		margin-bottom: 15px;
-		
-		@media (min-width:992px) {
+		.tooltip{	
+			.tooltip-inner{
+				background-color: $color-3;
+				padding: 15px;
+			}
+		}
+		a {
+			display: block;
+			.tooltip{
+				transition: all 0.3s ease;
+			}
+			.btn-def:hover{
+				transform: scale(1.5);	
+				& ~ tooltip{
+					transform: scale(1.5);	
+				}
+			}
+		}
+	}
+	@media (min-width: 992px) {
+		.boxes-cell{
 			width: (100/5)+%;	
 			&:nth-child(1){
 				.bg-wrapper{
@@ -408,23 +433,10 @@
 				}
 			}
 		}
-		.tooltip{	
-			.tooltip-inner{
-				background-color: $color-3;
-				padding: 15px;
-			}
-		}
-		a {
-			display: block;
-			.tooltip{
-				transition: all 0.3s ease;
-			}
-			.btn-def:hover{
-				transform: scale(1.5);	
-				& ~ tooltip{
-					transform: scale(1.5);	
-				}
-			}
+	}
+	@media (max-width: 991px) {
+		.boxes-cell{
+			margin: 0 0;
 		}
 	}
 	.bg-wrapper{
@@ -472,7 +484,14 @@
 		padding: 0 15px;
 	}
 }
-
+.short-tariffsgive-items.figure-m-v-30{
+	@media (min-width: 992px) {
+		figure{
+			margin-top: 10px;
+			margin-bottom: 0;
+		}
+	}
+}
 
 
 //--short-contacts
