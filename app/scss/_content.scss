@@ -494,9 +494,36 @@
 }
 
 
-//--short-contacts
-.short-contacts{
 
+.contacts-tabs{
+	.collapse-item{
+		margin: 15px 0;
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+		background-color: $color-3 !important;
+		color: white;
+	}
+	.collapse-content{
+		padding: 0 20px;
+		//height: 60px;
+	}
+	.tab-pane{
+		padding: 0 15px;
+	}
+	@media (max-width:991px) {
+		.tab-content{
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		text-align: left;
+		.nav-tabs{
+			padding: 20px 0;
+			text-align: center;
+			li{	
+				width: 100%;
+			}
+		}
+	}
 }
 .map-img{
 	.img{
@@ -616,7 +643,7 @@
 		text-align: center;
 		color: white;
 		.fa{
-			padding: 6px 0;
+			padding: 5px 0;
 		}
 		.fa-envelope{
 			font-size: 13px;

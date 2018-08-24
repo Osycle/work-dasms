@@ -674,3 +674,40 @@ textarea.form-control{
 
 
 
+//select
+.select2-container{
+	z-index: 999999 !important;
+}
+.select2-container{
+
+
+	&.select2-container--open{
+		.select2-selection--single{
+			.select2-selection__arrow b{
+				border-color: transparent transparent white transparent;
+			}
+		}
+	}
+	.select2-results__option--highlighted[aria-selected]{
+		background-color: white;
+		color: $color-2;
+	}
+	.select2-results__option[aria-selected=true]{
+		background-color: inherit;
+	}
+}
+html .select2-container--default .select2-selection--single{
+		border-radius: 30px;
+		border: 1px solid $color-gray-1;
+		background-color: $color-1;
+		//color: rgba(black, 0.7);
+		&:focus{
+			outline: none;
+		}
+		.select2-selection__rendered{
+			color: white;
+		}
+		.select2-selection__arrow b{
+			border-color: white transparent transparent transparent;
+		}
+}

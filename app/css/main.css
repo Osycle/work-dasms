@@ -6943,17 +6943,12 @@ table {
   .hover-style-1:hover, .btn-def:hover, .btn-icon:hover {
     -webkit-box-shadow: 0 0 15px -5px #000;
     box-shadow: 0 0 15px -5px #000;
-    color: black;
     background-color: #643dfa; }
   .hover-style-1:active, .btn-def:active, .btn-icon:active {
     -webkit-box-shadow: inset 0 0 15px -5px #000;
     box-shadow: inset 0 0 15px -5px #000; }
-  .hover-style-1.reverse:hover, .reverse.btn-def:hover, .reverse.btn-icon:hover {
-    -webkit-box-shadow: -5px -5px 0px 0px #e0e0e0, 5px 5px 0px 0px #291f4c, 10px 10px 0 0 #fa4402, 0 0 20px 0 #000;
-    box-shadow: -5px -5px 0px 0px #e0e0e0, 5px 5px 0px 0px #291f4c, 10px 10px 0 0 #fa4402, 0 0 20px 0 #000; }
-  .hover-style-1.reverse:active, .reverse.btn-def:active, .reverse.btn-icon:active {
-    -webkit-box-shadow: -2px -2px 0px 0px #e0e0e0, 2px 2px 0px 0px #291f4c, 5px 5px 0 0 #fa4402, 0 0 10px 0 #000;
-    box-shadow: -2px -2px 0px 0px #e0e0e0, 2px 2px 0px 0px #291f4c, 5px 5px 0 0 #fa4402, 0 0 10px 0 #000; }
+  .hover-style-1.reverse:hover:not([class*="bg-color"]), .reverse.btn-def:hover:not([class*="bg-color"]), .reverse.btn-icon:hover:not([class*="bg-color"]) {
+    background-color: #fa4402; }
 
 .focus-style-1, input.modal-control, textarea.modal-control {
   -webkit-transition: all 0.3s ease;
@@ -7218,6 +7213,7 @@ h4 {
   font-size: 1.2em; }
 
 h5 {
+  font-weight: 600;
   font-size: 1em; }
 
 .h-style-1:after, .h-style-1:before {
@@ -7260,7 +7256,8 @@ hr {
 
 .main-content {
   background-color: white;
-  position: relative; }
+  position: relative;
+  min-height: 500px; }
   @media (max-width: 991px) {
     .main-content {
       text-align: center; } }
@@ -8018,6 +8015,31 @@ textarea.form-control {
     border: 0;
     background-color: transparent; }
 
+.select2-container {
+  z-index: 999999 !important; }
+
+.select2-container.select2-container--open .select2-selection--single .select2-selection__arrow b {
+  border-color: transparent transparent white transparent; }
+
+.select2-container .select2-results__option--highlighted[aria-selected] {
+  background-color: white;
+  color: #643dfa; }
+
+.select2-container .select2-results__option[aria-selected=true] {
+  background-color: inherit; }
+
+html .select2-container--default .select2-selection--single {
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 1px solid #e2e2e2;
+  background-color: #fa4402; }
+  html .select2-container--default .select2-selection--single:focus {
+    outline: none; }
+  html .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: white; }
+  html .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: white transparent transparent transparent; }
+
 /*
 	_content.css
 */
@@ -8453,6 +8475,31 @@ textarea.form-control {
     margin-top: 10px;
     margin-bottom: 0; } }
 
+.contacts-tabs .collapse-item {
+  margin: 15px 0; }
+
+.contacts-tabs .nav-tabs > li.active > a, .contacts-tabs .nav-tabs > li.active > a:hover, .contacts-tabs .nav-tabs > li.active > a:focus {
+  background-color: #291f4c !important;
+  color: white; }
+
+.contacts-tabs .collapse-content {
+  padding: 0 20px; }
+
+.contacts-tabs .tab-pane {
+  padding: 0 15px; }
+
+@media (max-width: 991px) {
+  .contacts-tabs {
+    text-align: left; }
+    .contacts-tabs .tab-content {
+      margin-top: 15px;
+      margin-bottom: 15px; }
+    .contacts-tabs .nav-tabs {
+      padding: 20px 0;
+      text-align: center; }
+      .contacts-tabs .nav-tabs li {
+        width: 100%; } }
+
 .map-img .img {
   position: relative;
   height: 560px;
@@ -8556,7 +8603,7 @@ textarea.form-control {
   text-align: center;
   color: white; }
   .contacts-info-items .icon-content .fa {
-    padding: 6px 0; }
+    padding: 5px 0; }
   .contacts-info-items .icon-content .fa-envelope {
     font-size: 13px;
     padding: 0px; }
@@ -8673,6 +8720,20 @@ html body .tp-bullets.simplebullets.round .bullet {
     -webkit-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
     transition: all 0.8s ease; }
+
+.fancymodal input::-moz-placeholder, .fancymodal textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  opacity: 1; }
+
+.fancymodal input:-ms-input-placeholder, .fancymodal textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.4); }
+
+.fancymodal input::-webkit-input-placeholder, .fancymodal textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.4); }
+
+.fancymodal input::-ms-expand, .fancymodal textarea::-ms-expand {
+  border: 0;
+  background-color: transparent; }
 
 .carousel-prev-next {
   color: inherit;

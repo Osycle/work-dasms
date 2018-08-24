@@ -19,6 +19,42 @@
 </head>
 
 <body>
+	<!-- Скрытые блоки -->
+	<div class="hide">
+		
+		<!-- tariffs-modal -->
+		<div id="tariffs-modal" class="box-xs-6 fancymodal">
+			<div class="tariffs-modal-content">
+				<div class="pie-md-1 modal-col">
+					<h3 class="color-2" align="center">Подключение тарифа</h3>
+					<div class="form-content p-h-25">
+						<form action="">
+							<div class="row">
+								<div class="col-md-6 m-v-15 p-h-15">
+									<input type="password" class="pie-form-control box-xs-10" placeholder="Имя">
+								</div>
+								<div class="col-md-6 m-v-15 p-h-15">
+									<input type="password" class="pie-form-control box-xs-10" placeholder="E-mail">
+								</div>
+								<div class="col-md-6 m-v-15 p-h-15">
+									<input type="password" class="pie-form-control box-xs-10" placeholder="Телефон">
+								</div>
+								<div class="col-md-6 m-v-15 p-h-15">
+									<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+										<option value="">3500 р/мес</option>
+										<option value="">3000 р/мес</option>
+										<option value="">2500 р/мес</option>
+									</select>
+								</div>
+							</div>
+							<hr>
+							<span class="btn-def box-md-4 m-auto box-xs-8 m-v-10 reverse"><button type="submit" class="p-h-30 p-v-10"><b>Отправить заявку на подключение</b></button></span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div id="page">
 		<noscript>
 			<p>Ваш браузер не поддерживает скрипты!
@@ -516,7 +552,7 @@
 						<div class="short-tariffs-items boxes-4 text-center">
 							<div class="boxes-cell" data-aos="flip-left" data-aos-delay="0">
 								<div class="bg-wrapper">
-									<a href="#">
+									<a href="javascript:;" data-src="#tariffs-modal" data-fancybox>
 										<div class="cap-content bg-color-2 p-v-15 color-white pie-flex-center">
 											<div>
 												<h3 class="h-clear">1 месяц</h3>
@@ -735,6 +771,54 @@
 								</div>
 							</div>
 						</div>
+							<div class="contacts-info  col-md-12 p-h-15">
+								<h2 class="m-v-30">Контактная информация</h2>
+								<div class="contacts-map p-h-15">
+									<div id="map-canvas" class="m-v-30 radius-3 over-hidden"></div>
+								</div>
+								<div class="contacts-info-items col-md-8 col-md-offset-2 p-b-45 parag-gray">
+									<div class="col-md-6 m-v-15">
+										<div class="col-md-2">
+											<div class="icon-content m-auto-sm"><i class="fa fa-map-marker"></i></div>
+										</div>
+										<div class="col-md-8">
+											<p><b>Office one</b></p>
+											<p>123 Avenue 1325 New York, USA</p>
+										</div>
+									</div>
+									<div class="col-md-6 m-v-15">
+										<div class="col-md-2">
+											<div class="icon-content m-auto-sm"><i class="fa fa-map-marker"></i></div>
+										</div>
+										<div class="col-md-8">
+											<p><b>Office Two</b></p>
+											<p>123 Avenue 1325 New York, USA</p>
+										</div>
+									</div>
+									<div class="col-md-6 m-v-15">
+										<div class="col-md-2">
+											<div class="icon-content m-auto-sm"><i class="fa fa-envelope"></i></div>
+										</div>
+										<div class="col-md-8">
+											<p><b>Email address</b></p>
+											<p>Example@email.com</p>
+											<p>Example@email.com</p>
+										</div>
+									</div>
+									<div class="col-md-6 m-v-15">
+										<div class="col-md-2">
+											<div class="icon-content m-auto-sm"><i class="fa fa-headphones"></i></div>
+										</div>
+										<div class="col-md-8">
+											<p><b>Phone number</b></p>
+											<p>99899 777 77 77</p>
+											<p>99899 777 77 77</p>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+
 					</div>
 				</div>
 				<!-- ./short-contacts -->
@@ -804,7 +888,7 @@
 							</div>
 						</div>
 						<div class="col-md-3 footer-links p-h-15">
-							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="#" class="p-h-15">Вопросы</a></div></span>
+							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="questions.html" class="p-h-15">Вопросы</a></div></span>
 							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="#" class="p-h-15">Публичная оферта</a></div></span>
 							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="#" class="p-h-15">Договор о сотрудничестве</a></div></span>
 							<div class="footer-info m-v-15">

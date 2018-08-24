@@ -506,27 +506,18 @@ table {
 	//box-shadow:  0 0 0px 0px #000;
 	&:hover{
 		box-shadow:  0 0 15px -5px #000;
-		color: black;
+		//color: black;
 		background-color: $color-2;
 	}
 	&:active{
 		box-shadow: inset 0 0 15px -5px #000;
 	}
 	&.reverse{
-		&:hover{
-			box-shadow: 
-								-5px -5px 0px 0px darken(white, 12%), 
-								5px 5px 0px 0px $color-3, 
-								10px 10px 0 0 $color-1, 
-								0 0 20px 0 #000;
+		&:hover:not([class*="bg-color"]){
+			//color: black;
+			background-color: $color-1;
 		}
-		&:active{
-			box-shadow: 
-					-2px -2px 0px 0px darken(white, 12%), 
-					2px 2px 0px 0px $color-3, 
-					5px 5px 0 0 $color-1, 
-					0 0 10px 0 #000;
-		}
+
 	}
 }
 
@@ -859,6 +850,7 @@ h4{
 	font-size: em(18, 15);
 }
 h5{	
+	font-weight: 600;
 	font-size: em(15, 15);
 }
 
@@ -915,6 +907,7 @@ hr{
 	//z-index: 1;
 	background-color: white;
 	position: relative;
+	min-height: 500px;
 	@media (max-width: 991px){
 		text-align: center ;
 	}
