@@ -8031,8 +8031,7 @@ textarea.form-control {
 html .select2-container--default .select2-selection--single {
   -webkit-border-radius: 30px;
   border-radius: 30px;
-  border: 1px solid #e2e2e2;
-  background-color: #fa4402; }
+  border: 1px solid #e2e2e2; }
   html .select2-container--default .select2-selection--single:focus {
     outline: none; }
   html .select2-container--default .select2-selection--single .select2-selection__rendered {
@@ -8537,13 +8536,38 @@ html .select2-container--default .select2-selection--single {
       position: relative; } }
 
 .short-feedback {
-  background-image: url("../img/bg/bg-feedback.jpg");
   background-position: center;
   -webkit-background-size: cover;
   background-size: cover; }
   @media (max-width: 991px) {
     .short-feedback h1 [class*='bg-color'] {
       background-color: transparent; } }
+  .short-feedback input, .short-feedback textarea {
+    color: black;
+    border-color: black; }
+    .short-feedback input::-moz-placeholder, .short-feedback textarea::-moz-placeholder {
+      color: black;
+      opacity: 1; }
+    .short-feedback input:-ms-input-placeholder, .short-feedback textarea:-ms-input-placeholder {
+      color: black; }
+    .short-feedback input::-webkit-input-placeholder, .short-feedback textarea::-webkit-input-placeholder {
+      color: black; }
+    .short-feedback input::-ms-expand, .short-feedback textarea::-ms-expand {
+      border: 0;
+      background-color: transparent; }
+  .short-feedback h1 {
+    color: black; }
+    .short-feedback h1 span {
+      color: white; }
+  .short-feedback p {
+    color: black; }
+  .short-feedback .select2-container--default .select2-selection--single {
+    border-color: black;
+    color: black; }
+  .short-feedback .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: black; }
+  .short-feedback .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: black transparent transparent transparent; }
 
 .select2-container--default {
   width: 100% !important; }

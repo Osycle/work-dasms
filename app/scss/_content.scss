@@ -565,13 +565,37 @@
 
 //--short-feedback
 .short-feedback{
-	background-image: url('../img/bg/bg-feedback.jpg');
+	//background-image: url('../img/bg/bg-feedback.jpg');
 	background-position: center;
 	background-size: cover;
 	@media (max-width: 991px) {
 		h1 [class*='bg-color']{
 			background-color: transparent;
 		}
+	}
+	input, textarea{
+		color: black;
+		border-color: black;
+		@include placeholder-color(black);
+	}
+	h1{
+		color: black;
+		span{
+			color: white;
+		}
+	}
+	p{
+		color: black;
+	}
+	.select2-container--default .select2-selection--single{
+		border-color: black;
+		color: black;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__rendered{
+		color: black;
+	}
+	.select2-container--default .select2-selection--single .select2-selection__arrow b{
+		border-color: black transparent transparent transparent;
 	}
 }
 .select2-container--default{
