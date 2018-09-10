@@ -31,20 +31,16 @@
 						<form action="">
 							<div class="row">
 								<div class="col-md-6 m-v-15 p-h-15">
-									<input type="password" class="pie-form-control box-xs-10" placeholder="Имя">
+									<input type="text" class="pie-form-control box-xs-10" placeholder="Имя">
 								</div>
 								<div class="col-md-6 m-v-15 p-h-15">
-									<input type="password" class="pie-form-control box-xs-10" placeholder="E-mail">
+									<input type="text" class="pie-form-control box-xs-10" placeholder="E-mail">
 								</div>
 								<div class="col-md-6 m-v-15 p-h-15">
-									<input type="password" class="pie-form-control box-xs-10" placeholder="Телефон">
+									<input type="text" class="pie-form-control box-xs-10" placeholder="Телефон">
 								</div>
 								<div class="col-md-6 m-v-15 p-h-15">
-									<select name="" class="js-select box-xs-10 search-hide pie-form-control">
-										<option value="">3500 р/мес</option>
-										<option value="">3000 р/мес</option>
-										<option value="">2500 р/мес</option>
-									</select>
+									<input type="text" class="pie-form-control box-xs-10" id="tariffs-modal-price" value="0" readonly="readonly">
 								</div>
 							</div>
 							<hr>
@@ -552,7 +548,7 @@
 						<div class="short-tariffs-items boxes-4 text-center">
 							<div class="boxes-cell" data-aos="flip-left" data-aos-delay="0">
 								<div class="bg-wrapper">
-									<a href="javascript:;" data-src="#tariffs-modal" data-fancybox>
+									<a href="javascript:;" data-src="#tariffs-modal" data-fancybox data-price="400000">
 										<div class="cap-content bg-color-2 p-v-15 color-white pie-flex-center">
 											<div>
 												<h3 class="h-clear">1 месяц</h3>
@@ -933,6 +929,11 @@
 	<!-- SCRIPTS -->
 	<script src="js/scripts.min.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		$('[data-src="#tariffs-modal"]').on("click", function(e){
+			$("#tariffs-modal-price").attr("value", $(this).attr("data-price") );
+		})
+	</script>
 </body>
 
 </html>
