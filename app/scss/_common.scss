@@ -912,7 +912,7 @@ hr{
 		text-align: center ;
 	}
 	p{
-		font-size: 0.9em;
+		font-size: 1em;
 		font-weight: 400;
 		line-height: 125%;
 	}
@@ -932,6 +932,11 @@ hr{
 	}
 	.line-height-def{
 		line-height: 100%;
+	}
+	@media (max-width:991px) {
+		h1{
+			font-size: 1.8em;
+		}
 	}
 }
 .breadcrumb-container{

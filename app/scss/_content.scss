@@ -281,7 +281,7 @@
 	li{
 		margin-top: 10px;
 		margin-bottom: 10px;
-		font-size: 0.9em;
+		font-size: 1em;
 		font-weight: 600;
 		i{
 			color: $color-1;
@@ -319,6 +319,7 @@
 .short-solution{
 	background-image: url('../img/bg/bg-solution.jpg');
 	background-position: center;
+	background-size: cover;
 }
 .short-solution-items{
 	i{
@@ -478,6 +479,9 @@
 		&:hover{
 			z-index: 2;
 		}
+	}
+	small{
+		font-size: 13px;
 	}
 	.desc-content{
 		margin-top: 30px;

@@ -7262,7 +7262,7 @@ hr {
     .main-content {
       text-align: center; } }
   .main-content p {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
     line-height: 125%; }
   .main-content ul:not([class]) {
@@ -7273,6 +7273,9 @@ hr {
     margin: 15px 0; }
   .main-content .line-height-def {
     line-height: 100%; }
+  @media (max-width: 991px) {
+    .main-content h1 {
+      font-size: 1.8em; } }
 
 .main-slider {
   z-index: 0;
@@ -8292,7 +8295,7 @@ html .select2-container--default .select2-selection--single {
 .iconlist-content li {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 600; }
   .iconlist-content li i {
     color: #fa4402;
@@ -8315,7 +8318,9 @@ html .select2-container--default .select2-selection--single {
 
 .short-solution {
   background-image: url("../img/bg/bg-solution.jpg");
-  background-position: center; }
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover; }
 
 .short-solution-items i {
   font-weight: 300; }
@@ -8458,6 +8463,9 @@ html .select2-container--default .select2-selection--single {
       background-color: #643dfa; }
   .short-tariffextend-items .bg-wrapper:hover {
     z-index: 2; }
+
+.short-tariffextend-items small {
+  font-size: 13px; }
 
 .short-tariffextend-items .desc-content {
   margin-top: 30px;
