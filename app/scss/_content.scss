@@ -237,6 +237,11 @@
 	background-image: url('../img/bg/bg-offer.jpg');
 	background-size: cover;
 	background-position: center;
+	.iconlist-content{
+		li{
+			list-style: none;
+		}
+	}
 }
 .short-offer-items{
 	figure{

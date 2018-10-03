@@ -8258,6 +8258,8 @@ html .select2-container--default .select2-selection--single {
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center; }
+  .short-offer .iconlist-content li {
+    list-style: none; }
 
 .short-offer-items figure .bg-wrapper {
   position: relative;
