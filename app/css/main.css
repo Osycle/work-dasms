@@ -8064,7 +8064,7 @@ html .select2-container--default .select2-selection--single {
     position: relative; }
   .bnr-slider .desc-content {
     position: absolute;
-    bottom: 60px;
+    bottom: 12px;
     -webkit-transform: translateX(-15px);
     -ms-transform: translateX(-15px);
     transform: translateX(-15px); }
@@ -8163,7 +8163,7 @@ html .select2-container--default .select2-selection--single {
     pointer-events: auto; }
 
 .slider-slogan.bg-color-3 {
-  margin-top: 400px;
+  margin-top: 500px;
   -webkit-border-radius: 45px 0;
   border-radius: 45px 0; }
   .slider-slogan.bg-color-3 h1 {
